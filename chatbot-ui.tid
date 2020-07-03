@@ -1,0 +1,23 @@
+title: $:/plugins/ceebee/chatbot/ui/chat
+creator: CeeBeeToo
+created: 20180204065523518
+
+\define chatActions() 
+<$action-chat filter="[tag[RiveScript]]"  user="$:/temp/chatbot/user-message" dialogue="$:/temp/dialogue/00" />
+<$action-deletefield $tiddler='$:/temp/chatbot/user-message' $field="text"/>
+\end
+
+<div class='tc-scrollable-inner' >
+<$list filter="[prefix[$:/temp/dialogue]!sort[created]]">
+<$set name='class' value='tc-speechbubble tc-speechbubble-left' filter ="[all[current]field:from[bot]]"  emptyValue='tc-speechbubble tc-speechbubble-right' >
+<div class=<<class>> > {{!!text}} </div>
+</$set>
+</$list>
+</div>
+
+<div class="tc-chat-toolbar">
+<$button class="tc-btn-chat" actions=<<chatActions>> >{{$:/plugins/ceebee/chatbot/images/chat.svg}} Chat</$button>
+<$keyboard tag="span" class="tc-chat-edit-span" key='enter' actions=<<chatActions>> >
+<$edit-text tiddler="$:/temp/chatbot/user-message" tag="input" class="tc-chat-edit" focus='yes' />
+</$keyboard>
+</div>

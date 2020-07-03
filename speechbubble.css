@@ -1,0 +1,57 @@
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
+
+<pre>
+.tc-chat-toolbar{
+    width: 100%;
+    overflow: hidden;
+}
+.tc-chat-edit{
+    width: 100%;padding: 8px; margin: 4px 8px 4px 0px; font-size: 1.2em; line-height: 1.4em;
+}
+.tc-chat-edit-span{
+    display: block;
+    overflow: hidden;
+}
+.tc-btn-chat{
+   float: right; display: inline-block; padding: 8px; margin: 4px 8px 4px 0px; background: #34c734; color: #ffffff; fill: #ffffff; border: none; font-size: 1.2em; line-height: 1.4em; text-decoration: none; }
+
+button.tc-btn-chat svg.tc-image-button { width: 1.5em; height: 1.5em }
+
+.tc-scrollable-inner {
+	height: 300px;
+	overflow: auto;
+	transform: rotate(180deg);
+	direction: rtl;
+}
+
+.tc-speechbubble {
+	transform: rotate(180deg);
+	direction: ltr;
+	position: relative;
+	width: 95%;
+	margin: 12px auto; padding: 6px;
+	background-color: <<colour code-background>> ;
+        <<box-shadow '9px 9px 3px lightgrey' >>
+}
+
+.tc-speechbubble-left { left : -1% ;}
+.tc-speechbubble-right{ right : -1% ; }
+
+.tc-speechbubble:before
+{ 	content: ' ';
+        position: absolute;
+	top: 100%;
+	width: 0;
+	height: 0;
+	border: 8px solid;
+	border-color: <<colour code-background>> transparent transparent  transparent  ;
+	margin-top: 0px;
+}
+
+.tc-speechbubble-left:before  {
+	left : 25% ;
+}
+.tc-speechbubble-right:before { left: 75%; ; }
+
+
+</pre>
