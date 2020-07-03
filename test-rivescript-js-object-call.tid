@@ -1,0 +1,16 @@
+created: 20200625081543732
+creator: ceebeetree
+tags: RiveScript
+title: $:/plugins/ceebee/chatbot/test-rivescript-js-object-call
+type: text/plain
+
+> object clear-dialogue javascript
+var list = $tw.wiki.filterTiddlers("[prefix[$:/temp/dialogue]]");
+
+$tw.utils.each( list,function(title,index) {
+			$tw.wiki.deleteTiddler(title);
+		});
+< object
+
++ clear
+- <call>clear-dialogue</call>

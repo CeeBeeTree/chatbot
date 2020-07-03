@@ -3,7 +3,7 @@ creator: CeeBeeToo
 created: 20180204065523518
 
 \define chatActions() 
-<$action-chat filter="[tag[RiveScript]]"  user="$:/temp/chatbot/user-message" dialogue="$:/temp/dialogue/00" />
+<$action-chat filter="[all[shadows+tiddlers]tag[RiveScript]]"  user="$:/temp/chatbot/user-message" dialogue="$:/temp/dialogue/00" />
 <$action-deletefield $tiddler='$:/temp/chatbot/user-message' $field="text"/>
 \end
 
