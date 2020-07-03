@@ -1,0 +1,25 @@
+{
+	"tiddlers": [
+		{
+			"file": "rivescript.min.js",
+			"fields": {
+				"type": "application/javascript",
+				"title": "$:/plugins/ceebee/chatbot/library/rivescript.min.js",
+				"module-type": "library",
+                "creator": "CeeBeeToo",
+                "created": "20180124085542854",
+                "global-module": "true"
+			}
+		},
+        {
+			"file": "rivescript.min.boot.js",
+			"fields": {
+				"type": "application/javascript",
+				"title": "$:/plugins/ceebee/chatbot/library/rivescript.min.boot.js",
+				"module-type": "startup",
+                "creator": "CeeBeeToo",
+                "created": "20180124090121831"
+			}
+		}
+	]
+}
