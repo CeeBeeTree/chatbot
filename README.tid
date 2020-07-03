@@ -2,5 +2,5 @@ title: $:/plugins/ceebee/chatbot/readme
 creator: CeeBeeTree
 created: 20200703012014427
 
-<h1>chatbot</h1>
+#chatbot
 Tiddlywiki chatbot plugin using RiveScript library
