@@ -18,6 +18,6 @@ created: 20180204065523518
 <div class="tc-chat-toolbar">
 <$button class="tc-btn-chat" actions=<<chatActions>> >{{$:/plugins/ceebee/chatbot/images/chat.svg}} Chat</$button>
 <$keyboard tag="span" class="tc-chat-edit-span" key='enter' actions=<<chatActions>> >
-<$edit-text tiddler="$:/temp/chatbot/user-message" tag="input" class="tc-chat-edit" focus='yes' />
+<$edit-text tiddler="$:/temp/chatbot/user-message" tag="input" class="tc-chat-edit" focus='yes' default="" />
 </$keyboard>
 </div>
