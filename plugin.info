@@ -2,7 +2,7 @@
     "title": "$:/plugins/ceebee/chatbot",
     "description": "Action widget plugin to create chat bots using RiveScript library",
     "author": "Christian Byron",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "core-version": ">=5.0.8",
     "source": "https://github.com/ceebeetree/chatbot",
     "plugin-type": "plugin"
